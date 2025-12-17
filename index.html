@@ -5,441 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Sachdeva</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-            font-size: 16px;
-        }
-        
-        /* Header */
-        header {
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #dee2e6;
-            padding: 2rem 0;
-        }
-        
-        .header-content {
-            max-width: 900px;
+            color: #24292e;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 2rem 1rem;
+            font-size: 16px;
         }
         
         h1 {
             font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: #212529;
-        }
-        
-        .subtitle {
-            font-size: 1.1rem;
-            color: #6c757d;
-            margin-bottom: 1.5rem;
-        }
-        
-        /* Navigation */
-        nav {
-            margin-top: 1rem;
-        }
-        
-        nav a {
-            color: #007bff;
-            text-decoration: none;
-            margin-right: 1.5rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-        
-        nav a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-        
-        /* Main Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2.5rem 2rem;
-        }
-        
-        /* Section Styling */
-        section {
-            margin-bottom: 3rem;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            color: #212529;
-            border-bottom: 2px solid #dee2e6;
-            padding-bottom: 0.5rem;
+            line-height: 1.2;
         }
         
         p {
             margin-bottom: 1rem;
-            line-height: 1.7;
         }
         
-        /* Tech Stack Lists */
-        .tech-category {
-            margin-bottom: 1.5rem;
-        }
-        
-        .tech-category h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #495057;
-        }
-        
-        .tech-category p {
-            color: #6c757d;
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Expertise List */
-        .expertise-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-        
-        .expertise-list li {
-            color: #495057;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .expertise-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0.5rem;
-            color: #007bff;
-            font-weight: bold;
-        }
-        
-        /* Project Item */
-        .project-item {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #e9ecef;
-        }
-        
-        .project-item:last-child {
-            border-bottom: none;
-        }
-        
-        .project-item h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        
-        .project-item h3 a {
-            color: #212529;
+        a {
+            color: #0366d6;
             text-decoration: none;
         }
         
-        .project-item h3 a:hover {
-            color: #007bff;
-        }
-        
-        .project-meta {
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin-bottom: 0.8rem;
-        }
-        
-        .project-description {
-            color: #495057;
-            margin-bottom: 0.8rem;
-        }
-        
-        .project-links {
-            margin-top: 0.5rem;
-        }
-        
-        .project-links a {
-            color: #007bff;
-            text-decoration: none;
-            margin-right: 1rem;
-            font-size: 0.95rem;
-        }
-        
-        .project-links a:hover {
+        a:hover {
             text-decoration: underline;
         }
         
-        /* Footer */
-        footer {
-            background-color: #f8f9fa;
-            border-top: 1px solid #dee2e6;
-            padding: 2rem;
-            margin-top: 3rem;
-            text-align: center;
-        }
-        
-        .footer-links {
-            margin-bottom: 1rem;
-        }
-        
-        .footer-links a {
-            color: #007bff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-        
-        footer p {
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive */
         @media (max-width: 768px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            
             h1 {
                 font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .expertise-list {
-                grid-template-columns: 1fr;
-            }
-            
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
-            
-            .container {
-                padding: 2rem 1.5rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Abhishek Sachdeva</h1>
-            <p class="subtitle">Data Scientist & AI Engineer</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                I am a Data Scientist focused on <strong>applied machine learning</strong> and <strong>agentic AI</strong>, 
-                where I build end-to-end modeling workflows and LLM-powered prototypes that turn messy data into usable decisions. 
-                With experience across regression, clustering, time-series forecasting, and neural networks, I emphasize sound 
-                evaluation and clear communication in all my work.
-            </p>
-            <p>
-                Recently, I have been exploring <strong>agent workflows</strong> using tools such as LangGraph and LangChain 
-                (tool use, routing, structured outputs) and translating experiments into practical internal demos. I'm interested 
-                in roles that sit at the <strong>intersection of ML engineering and analytics</strong>, especially where rapid 
-                experimentation meets production constraints.
-            </p>
-            <p>
-                My work spans multiple domains including production MLOps, RAG systems, econometric analysis, and real-time 
-                streaming applications. I focus on building systems that bridge the gap between research and practical 
-                business applications.
-            </p>
-        </section>
-
-        <section id="expertise">
-            <h2>Emerging Areas of Expertise</h2>
-            <ul class="expertise-list">
-                <li>Multi-modal LLMs</li>
-                <li>Graph ML & Causal Inference</li>
-                <li>Production MLOps/LLMOps</li>
-                <li>Event-driven AI Systems Architecture</li>
-                <li>MCP & Tool Orchestration</li>
-                <li>RAG & Knowledge Graphs</li>
-                <li>Advanced Optimization</li>
-                <li>Real-time Streaming</li>
-                <li>Global Macro & Applied Econometrics</li>
-                <li>AI for Enterprise Analytics</li>
-            </ul>
-
-            <h2 style="margin-top: 3rem;">Technical Skills</h2>
-            
-            <div class="tech-category">
-                <h3>Core Stack</h3>
-                <p>Python (Pandas, NumPy), SQL, R, scikit-learn</p>
-            </div>
-            
-            <div class="tech-category">
-                <h3>GenAI Stack</h3>
-                <p>Agent frameworks (LangChain, LangGraph), RAG (embeddings + vector databases), 
-                prompt & context engineering, evaluation basics (groundedness/quality checks)</p>
-            </div>
-            
-            <div class="tech-category">
-                <h3>Visualization</h3>
-                <p>Matplotlib, Seaborn, Tableau, Plotly</p>
-            </div>
-            
-            <div class="tech-category">
-                <h3>Development Tools</h3>
-                <p>Jupyter, VS Code, Cursor, Google Colab, Databricks, Git/GitHub</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            
-            <div class="project-item">
-                <h3>
-                    <a href="https://github.com/yourusername/delivery-eta-prediction" target="_blank">
-                        Multi-Model ML System for Dynamic Delivery ETA Prediction and Automated Operations Management
-                    </a>
-                </h3>
-                <p class="project-meta">Machine Learning | Production Systems | Geospatial Analysis</p>
-                <p class="project-description">
-                    Production-grade ML system for dynamic delivery time estimation with automated operations management. 
-                    Implements ensemble learning (Random Forest + MLP) with real-time inference, feature engineering for 
-                    traffic/weather patterns, and geospatial analysis using Haversine distance calculations. Includes 
-                    Streamlit dashboard with sub-second prediction latency, interactive EDA, and model performance tracking.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/delivery-eta-prediction" target="_blank">GitHub Repository</a>
-                    <a href="https://github.com/yourusername/delivery-eta-prediction#readme" target="_blank">Documentation</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>
-                    <a href="https://github.com/yourusername/agentic-data-pipeline" target="_blank">
-                        Agentic Data Processing Pipeline
-                    </a>
-                </h3>
-                <p class="project-meta">LangGraph | Agent Workflows | ETL</p>
-                <p class="project-description">
-                    Multi-agent system that transforms messy Excel files and unstructured data into cleaned DataFrames 
-                    for SQL-style querying. Implements helper agents for automated validation, schema detection, and 
-                    data quality checks. Built for production environments where manual data cleaning is a bottleneck.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/agentic-data-pipeline" target="_blank">GitHub Repository</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>
-                    <a href="https://github.com/yourusername/investment-analyst-agents" target="_blank">
-                        Multi-Agent Investment Analyst System
-                    </a>
-                </h3>
-                <p class="project-meta">LangChain | RAG | Tool Orchestration</p>
-                <p class="project-description">
-                    LangGraph-based system simulating investment analyst workflows. Orchestrates specialized agents for 
-                    market research, sentiment analysis, and portfolio recommendations with structured outputs. Demonstrates 
-                    tool use, routing, and context management in production agentic systems.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/investment-analyst-agents" target="_blank">GitHub Repository</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>
-                    <a href="https://github.com/yourusername/rag-evaluation" target="_blank">
-                        RAG Evaluation Framework
-                    </a>
-                </h3>
-                <p class="project-meta">RAG Systems | Evaluation | Vector Databases</p>
-                <p class="project-description">
-                    Comprehensive evaluation pipeline for RAG systems implementing groundedness metrics, context precision 
-                    checks, and answer relevancy scoring. Includes automated reporting, quality alerts, and integration with 
-                    vector databases for production RAG applications.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/rag-evaluation" target="_blank">GitHub Repository</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>
-                    <a href="https://github.com/yourusername/forecasting-suite" target="_blank">
-                        Time-Series Forecasting Suite
-                    </a>
-                </h3>
-                <p class="project-meta">Time-Series | Neural Networks | Production Deployment</p>
-                <p class="project-description">
-                    End-to-end forecasting pipeline with automated feature engineering, model selection (ARIMA, Prophet, LSTM), 
-                    and production deployment for business demand prediction. Includes backtesting framework and model 
-                    performance monitoring.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/forecasting-suite" target="_blank">GitHub Repository</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>
-                    <a href="https://github.com/yourusername/econometrics-toolkit" target="_blank">
-                        Econometric Analysis Toolkit
-                    </a>
-                </h3>
-                <p class="project-meta">Econometrics | Causal Inference | Statistical Analysis</p>
-                <p class="project-description">
-                    Statistical analysis framework for applied econometrics covering regression diagnostics, causal inference, 
-                    and macro indicator analysis. Built with automated reporting, visualization, and support for both Python 
-                    and R workflows for academic and industry research.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/econometrics-toolkit" target="_blank">GitHub Repository</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact">
-        <div class="footer-links">
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="mailto:your.email@example.com">Email</a>
-        </div>
-        <p>© 2025 Abhishek Sachdeva. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 20,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <h1>Abhishek Sachdeva</h1>
+    
+    <p>
+        I am a Data Scientist focused on applied machine learning and agentic AI, building end-to-end modeling workflows 
+        and LLM-powered prototypes that turn messy data into usable decisions. With experience across regression, clustering, 
+        time-series forecasting, and neural networks, I emphasize sound evaluation and clear communication.
+    </p>
+    
+    <p>
+        My work focuses on agent workflows using tools such as LangGraph and LangChain (tool use, routing, structured outputs) 
+        and translating experiments into practical internal demos. I'm interested in roles that sit at the intersection of 
+        ML engineering and analytics, especially where rapid experimentation meets production constraints.
+    </p>
+    
+    <p>
+        I have built several production-ready ML systems including multi-model delivery ETA prediction platforms, agentic 
+        data processing pipelines, and RAG evaluation frameworks. My projects demonstrate expertise in production MLOps, 
+        real-time inference systems, and econometric analysis for enterprise applications.
+    </p>
+    
+    <p>
+        My emerging areas of expertise include multi-modal LLMs, graph ML and causal inference, production MLOps/LLMOps, 
+        event-driven AI systems architecture, MCP and tool orchestration, RAG and knowledge graphs, advanced optimization, 
+        real-time streaming, global macro and applied econometrics, and AI for enterprise analytics.
+    </p>
+    
+    <p>
+        <strong>Essential tech stack:</strong> Python (Pandas, NumPy), SQL, R, ML (scikit-learn), Visualization (Matplotlib, 
+        Seaborn, Tableau), Notebooks/IDE (Jupyter, VS Code, Cursor, Google Colab, Databricks), Version control (Git/GitHub).
+    </p>
+    
+    <p>
+        <strong>GenAI stack:</strong> Agent frameworks (LangChain, LangGraph), RAG (embeddings + vector database), 
+        prompt & context engineering, evaluation basics (groundedness/quality checks).
+    </p>
+    
+    <p>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> | 
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | 
+        <a href="mailto:your.email@example.com">Email</a>
+    </p>
 </body>
 </html>
